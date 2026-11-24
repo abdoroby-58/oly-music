@@ -1,0 +1,31 @@
+{
+  "name": "oly-music",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite build && node server/index.mjs",
+    "start": "node server/index.mjs",
+    "build": "vite build",
+    "test": "node scripts/smoke.mjs",
+    "test:ui": "node scripts/ui-check.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.88.0",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "lucide-react": "^0.482.0",
+    "multer": "^2.0.2",
+    "pg": "^8.23.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "vite": "^6.4.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "description": "Oly Music — Arabic music publishing, discovery, and moderation"
+}
